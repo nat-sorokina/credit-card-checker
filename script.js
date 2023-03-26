@@ -42,7 +42,7 @@ const validateCred = arr => {
 
 const findInvalidCards = arr => {
 for (let i=0; i<arr.length; i++) {
-   return validateCred(arr[i]);
+   console.log(validateCred(arr[i]));
 }
 };
 findInvalidCards(arr);
@@ -67,6 +67,7 @@ const firstDigit = invalidCards.map(card => {
  else {return `Company not found`;}
 }
 );
+console.log(firstDigit);
 const removeDuplicates = data => {
   return [... new Set(data)];
 }
